@@ -40,7 +40,7 @@ import static com.wonderkiln.camerakit.CameraKit.Constants.PERMISSIONS_LAZY;
 import static com.wonderkiln.camerakit.CameraKit.Constants.PERMISSIONS_PICTURE;
 import static com.wonderkiln.camerakit.CameraKit.Constants.PERMISSIONS_STRICT;
 
-public class CameraView extends FrameLayout implements LifecycleObserver {
+public class CameraView extends FrameLayout {
 
     private static Handler sWorkerHandler;
 
