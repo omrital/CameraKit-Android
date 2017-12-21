@@ -51,6 +51,7 @@ public class CameraView extends FrameLayout implements LifecycleObserver {
         workerThread.setDaemon(true);
         workerThread.start();
         sWorkerHandler = new Handler(workerThread.getLooper());
+        // omri tal comment for commit
     }
 
     @Facing
