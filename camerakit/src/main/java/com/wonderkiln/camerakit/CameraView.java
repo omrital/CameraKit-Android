@@ -275,16 +275,14 @@ public class CameraView extends FrameLayout {
         switch (mPermissions) {
             case PERMISSIONS_STRICT:
                 if (cameraCheck != PackageManager.PERMISSION_GRANTED || audioCheck != PackageManager.PERMISSION_GRANTED) {
-//                    requestPermissions(true, true);
-                    requestPermissions(true, false);
+                    requestPermissions(true, true);
                     return;
                 }
                 break;
 
             case PERMISSIONS_LAZY:
                 if (cameraCheck != PackageManager.PERMISSION_GRANTED) {
-//                    requestPermissions(true, true);
-                    requestPermissions(true, false);
+                    requestPermissions(true, true);
                     return;
                 }
                 break;
